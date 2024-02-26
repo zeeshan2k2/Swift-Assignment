@@ -90,7 +90,7 @@ print("Position is \(position)")
 print("Row is", Int(row))
 print("Column is", column)
 print("This was a bit tricky!")
-
+exercisesSolved += 1
 print()
 
 //8. Declare constants named dividend and divisor of type Double and assign both a value. Calculate the quotient and remainder of an integer division of dividend by divisor and store the results in constants named quotient and remainder. Calculate the remainder without using the operator %.
@@ -112,4 +112,38 @@ print("dividend: \(dividend)")
 print("divisor: \(divisor)")
 print("quotient: \(quotient)")
 print("remainder: \(remainder)")
+exercisesSolved += 1
+print()
 
+//9. A circle is made up of 2m radians, corresponding with 360 degrees. Declare a constant degrees of type Double and assign it an initial value. Calculate the corresponding angle in radians and store the result in a constant named radians.
+
+print("Q9.")
+let pi = 3.141592653589793238462643383279502884197
+let degrees: Double = 46
+let radian = (degrees * pi) / 180
+
+print("radian for degree: \(degrees) is \(radian)")
+exercisesSolved += 1
+print()
+
+//10. Declare four constants named x1, y1, x2 and y2 of type Double. These constants represent the 2-dimensional coordinates of two points. Calculate the distance between these two points and store the result in a constant named distance.
+
+print("Q10.")
+let x1 = 11
+let x2 = 5
+let y1 = 7
+let y2 = 4
+let x = x2 - x1
+let y = y2 - y1
+var distance = pow(Decimal(x), 2)+pow(Decimal(y), 2)
+var decimal = NSDecimalNumber(decimal: distance)
+var convertingDecimaltoDouble: Double = decimal.doubleValue
+var finalDistance = sqrt(convertingDecimaltoDouble)
+exercisesSolved += 1
+print("for points x: \(x1), \(x2), and y: \(y1), \(y2). Distance is \(finalDistance)")
+
+print()
+
+print("Q11.")
+exercisesSolved += 1
+print("You have solved \((exercisesSolved / exercises)*100)% exercises")
