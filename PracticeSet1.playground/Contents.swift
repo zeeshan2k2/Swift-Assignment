@@ -144,6 +144,7 @@ print("for points x: \(x1), \(x2), and y: \(y1), \(y2). Distance is \(finalDista
 
 print()
 
+//11. Increment variable exercisesSolved a final time. Use the print function to print the percentage of exercises you managed to solve. The printed result should be a number between 0 and 1.
 print("Q11.")
 exercisesSolved += 1
 print("You have solved \((exercisesSolved / exercises)*100)% exercises")
