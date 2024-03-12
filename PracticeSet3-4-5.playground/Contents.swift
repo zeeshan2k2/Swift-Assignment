@@ -49,17 +49,19 @@ print()
 //let number = 10
 //let multiplier = 5
 //let summary = "\(number) multiplied by \(multiplier) equals \(number * multiplier)"
-
+print("Q8.")
 let number = 10
 let multiplier = 5
 let summary = "\(number) multiplied by \(multiplier) equals \(number * multiplier)"
 print("This is the value of constant summary:",summary)
 
+print()
 //9. What is the sum of a, b minus c?
 //let a = 4
 //let b: Int32 = 100
 //let c: UInt8 = 12
 
+print("Q9.")
 let a = 4
 let b: Int32 = 100
 let c: UInt8 = 12
