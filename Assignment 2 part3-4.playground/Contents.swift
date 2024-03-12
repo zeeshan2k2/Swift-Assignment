@@ -50,6 +50,26 @@ print("Number is prime: ", isPrime(6))
 print("Number is prime: ", isPrime(13))
 print("Number is prime: ", isPrime(8893))
 
+print()
 
+//Recursive function
 
+func fibonacci(_ num: Int) -> Int{
+    if num == 0 {
+        return num
+    } else if num == 1 {
+        return num
+    }
+    return fibonacci(num - 1) + fibonacci(num - 2)
+}
 
+var number = 10
+// for fibonnaci series
+for i in 0...number{
+    print(fibonacci(i))
+}
+
+print()
+
+//for final number 
+print(fibonacci(10))
