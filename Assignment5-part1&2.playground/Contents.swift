@@ -143,5 +143,47 @@ func merging(_ dict1: [String: String], with dict2: [String: String]) -> [String
 
 print(merging(dict5, with: dict6))
 
-//Challange 10 Count the characters
+print()
 
+//Challange 10 Count the characters
+func occurencesOfCharacters(in text: String) -> [Character: Int] {
+    var newDict: [Character: Int] = [:]
+    for i in text {
+        newDict[i, default: 0] += 1
+    }
+    return newDict
+}
+
+print(occurencesOfCharacters(in: "terminating"))
+
+print()
+
+//Challange 11 Unique Values
+func isInvertible(_ dictionary: [String: Int]) -> Bool {
+    var isUnique = true
+    var num = 0
+    for value in dictionary.values {
+        for value1 in dictionary.values {
+            if value == value1 {
+                num += 1
+            }
+        }
+        if num > 1 {
+            isUnique = false
+            num = 0
+        }
+        num = 0
+    }
+    
+    return isUnique
+}
+
+print(isInvertible(dict4))
+
+print()
+
+//Challange 12 removing keys and setting values to nil
+var nameTitleLookup: [String: String] = ["Mary": "Engineer", "Patrick": "Intern", "Ray": "Hacker"]
+nameTitleLookup["Patrick"] = nil
+nameTitleLookup.removeValue(forKey: "Ray")
+print(nameTitleLookup)
